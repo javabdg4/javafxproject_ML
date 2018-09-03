@@ -18,8 +18,6 @@ public class Main extends Application {
     private PersonView personView;
 
     public static void main(String[] args) {
-
-
         launch();
     }
 
