@@ -1,13 +1,12 @@
-package controller;
+package com.sda.javafx.controller;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import model.Person;
-import view.PersonView;
+import com.sda.javafx.model.Person;
+import com.sda.javafx.view.PersonView;
 
 public class PersonController {
 
@@ -60,5 +59,21 @@ public class PersonController {
         cityLabel.setText(person.getCity());
         postalCodeLabel.setText(person.getPostalCode());
         phoneNumberLabel.setText(person.getPhoneNumber());
+    }
+
+    public void handleNewButton(ActionEvent actionEvent) {
+        personView.loadNewPersonView();
+    }
+
+    public void handleEditButton(ActionEvent actionEvent) {
+
+    }
+
+    public void handleSaveButton(ActionEvent actionEvent) {
+
+    }
+
+    public void handleDeleteButton(ActionEvent actionEvent) {
+
     }
 }

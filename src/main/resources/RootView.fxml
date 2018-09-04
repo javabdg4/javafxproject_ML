@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PersonController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sda.javafx.controller.PersonController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -109,10 +109,10 @@
                               <Label fx:id="phoneNumberLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                            </children>
                         </GridPane>
-                        <Button layoutX="14.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="New" />
-                        <Button layoutX="84.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" />
-                        <Button layoutX="148.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" />
-                        <Button layoutX="215.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Delete">
+                        <Button onAction="#handleNewButton" layoutX="14.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="New" />
+                        <Button onAction="#handleEditButton" layoutX="84.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+                        <Button onAction="#handleSaveButton" layoutX="148.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" />
+                        <Button onAction="#handleDeleteButton" layoutX="215.0" layoutY="307.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Delete">
                            <effect>
                               <Lighting>
                                  <bumpInput>
